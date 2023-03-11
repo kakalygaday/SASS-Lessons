@@ -1,0 +1,36 @@
+div {
+  margin: 10px;
+  width: auto;
+  height: 194px;
+  border: thin solid green;
+}
+div h1 {
+  text-align: center;
+  color: green;
+}
+div hr {
+  margin-top: -20px;
+  height: 0.02em;
+  width: 45%;
+  border-width: 0;
+  background-color: blue;
+}
+div section {
+  display: flex;
+  margin: 10px;
+  margin-top: 10px;
+}
+div section article {
+  margin-top: 2px;
+  border: thin solid green;
+  text-align: center;
+}
+div section article p {
+  font-size: 17px;
+}
+div section article p.color1 {
+  color: blue;
+}
+div section article p.color2 {
+  color: red;
+}/*# sourceMappingURL=style.css.map */
