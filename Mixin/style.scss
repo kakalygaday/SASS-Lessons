@@ -34,11 +34,13 @@ div {
             text-align: center;
             p {
                 font-size: $defult-font-size;
-                &.color1 {
-                    color: $color-first;
+                @mixin color1($color) {
+                    // color: $color-first;
+                    @include color1($color);
                 }
                 &.color2 {
-                    color: $color-second;
+                    // color: $color-second;
+                    @include color1(red);
                 }
                 &.color3 {
                     
