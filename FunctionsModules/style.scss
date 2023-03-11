@@ -1,0 +1,63 @@
+$color-head: green;
+$color-first: blue;
+$color-second: red;
+$defult-font-size: 1rem;
+$footer-font-size: 24px;
+$footer-border-color: blue;
+
+// @function rem(... @return calc(... }
+
+@use "functions" as f;
+
+div {
+    margin: f.rem-convert(10);
+    width: auto;
+    height: auto;
+    border: thin solid $color-head;
+    h1 {
+        text-align: center;
+        color: $color-head;
+        font-size: f.rem-convert(30);
+    }
+    hr {
+        margin-top: f.rem-convert(-20);
+        height: 0.02em;
+        width: 23%;
+        border-width:0;
+        background-color: $color-first;
+    }
+    section {
+        display: flex;
+        margin: f.rem-convert(10);
+        margin-top: f.rem-convert(10);
+
+        article {
+            box-sizing: border-box;
+            margin-top: f.rem-convert(2);
+            border: thin solid $color-head;
+            text-align: center;
+            p {
+                font-size: $defult-font-size;
+                &.color1 {
+                    color: $color-first;
+                }
+                &.color2 {
+                    color: $color-second;
+                }
+                &.color3 {
+                    
+                    width: auto;
+                    height: f.rem-convert(25);
+                    padding: f.rem-convert(10) f.rem-convert(6);
+                    color: $color-head;
+                    font-size: $footer-font-size;
+                    text-align: center;
+                }
+            }
+            &.footer {
+                border: thin solid $footer-border-color;
+            }
+        }
+        
+    }
+}
