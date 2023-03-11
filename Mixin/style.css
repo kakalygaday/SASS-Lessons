@@ -1,0 +1,49 @@
+div {
+  margin: 10px;
+  width: auto;
+  height: auto;
+  border: thin solid green;
+}
+div h1 {
+  text-align: center;
+  color: green;
+  font-size: 30px;
+}
+div hr {
+  margin-top: -20px;
+  height: 0.02em;
+  width: 23%;
+  border-width: 0;
+  background-color: blue;
+}
+div section {
+  display: flex;
+  margin: 10px;
+  margin-top: 10px;
+}
+div section article {
+  box-sizing: border-box;
+  margin-top: 2px;
+  border: thin solid green;
+  text-align: center;
+}
+div section article p {
+  font-size: 1rem;
+}
+div section article p.color1 {
+  color: blue;
+}
+div section article p.color2 {
+  color: red;
+}
+div section article p.color3 {
+  width: auto;
+  height: 25px;
+  padding: 10px 6px;
+  color: green;
+  font-size: 24px;
+  text-align: center;
+}
+div section article.footer {
+  border: thin solid blue;
+}/*# sourceMappingURL=style.css.map */

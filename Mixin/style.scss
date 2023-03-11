@@ -1,0 +1,59 @@
+$color-head: green;
+$color-first: blue;
+$color-second: red;
+$defult-font-size: 1rem;
+$footer-font-size: 24px;
+$footer-border-color: blue;
+
+div {
+    margin: 10px;
+    width: auto;
+    height: auto;
+    border: thin solid $color-head;
+    h1 {
+        text-align: center;
+        color: $color-head;
+        font-size: 30px;
+    }
+    hr {
+        margin-top: -20px;
+        height: 0.02em;
+        width: 23%;
+        border-width:0;
+        background-color: $color-first;
+    }
+    section {
+        display: flex;
+        margin: 10px;
+        margin-top: 10px;
+
+        article {
+            box-sizing: border-box;
+            margin-top: 2px;
+            border: thin solid $color-head;
+            text-align: center;
+            p {
+                font-size: $defult-font-size;
+                &.color1 {
+                    color: $color-first;
+                }
+                &.color2 {
+                    color: $color-second;
+                }
+                &.color3 {
+                    
+                    width: auto;
+                    height: 25px;
+                    padding: 10px 6px;
+                    color: $color-head;
+                    font-size: $footer-font-size;
+                    text-align: center;
+                }
+            }
+            &.footer {
+                border: thin solid $footer-border-color;
+            }
+        }
+        
+    }
+}
